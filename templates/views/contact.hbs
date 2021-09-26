@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="icon" href="img/logo.webp">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>LoyalFriend | Contact Us</title>
+  </head>
+  <body onload="myFunction()">
+    <div id="loading"></div>
+    
+    <header role="banner">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <div id="logo">
+            <img src="img/logo.webp" alt="logoimage" srcset="">
+          </div>
+
+          <a class="navbar-brand absolute" href="index">LoyalFriend</a>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav mx-auto pl-lg-5 pl-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="services" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Organisation</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item" href="organisation/sadf">Sherry and Diya Foundation</a>
+                  <a class="dropdown-item" href="organisation/utkarsh">Utkarsh Star NGO</a>
+                  <a class="dropdown-item" href="organisation/jeevashram">Jeevashram Foundation</a>
+                  <a class="dropdown-item" href="organisation/friendicoes">Friendicoes</a>
+                  <a class="dropdown-item" href="organisation/paws">Paws</a>
+                  <a class="dropdown-item" href="organisation/redPaws">Red Paws Rescue</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="contact">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+    
+    <section class="home-slider inner-page owl-carousel">
+      <div class="slider-item" style="background-image: url('img/slider-1.jpg');">
+        
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate">
+              <h1>Contact Us</h1>
+              <p class="mb-5">Need Something? While we’re good with smoke signals,
+                   there are simpler ways for us to get in touch, and answer your questions.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- END slider -->
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5 order-2">
+            <form>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" class="form-control ">
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="phone">Phone</label>
+                  <input type="number" id="phone" class="form-control ">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" class="form-control ">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="message">Write Message</label>
+                  <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <button type="button" class="btn btn-primary btn-block" id="contactBtn">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 order-2 mb-5">
+            <div class="row justify-content-right">
+              <div class="col-md-8 mx-auto contact-form-contact-info">
+                <p class="d-flex">
+                  <span class="ion-ios-location icon mr-5"></span>
+                  <span>Mumbai, India</span>
+                </p>
+
+                <p class="d-flex">
+                  <span class="ion-ios-telephone icon mr-5"></span>
+                  <span>+91 123 456 789</span>
+                </p>
+
+                <p class="d-flex">
+                  <span class="ion-android-mail icon mr-5"></span>
+                  <span>info@petcare.com</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    {{>footer}}
+    <script>
+      const contactBtn = document.querySelector('#contactBtn');
+      const name = document.querySelector('#name');
+      const phone = document.querySelector('#phone');
+      const email = document.querySelector('#email');
+      const message = document.querySelector('#message');
+      const host = 'https://animal-welfare.herokuapp.com';
+      contactBtn.addEventListener('click',(e)=>{
+        if(name.value === '' || phone.value === '' || email.value === '' || message.value === ''){
+          alert("please fill all details!");
+          return;
+        }
+        if(phone.value.length != 10){
+           alert("please enter correct mobile number");
+           return ;
+        }
+        if(/\S+@\S+\.\S+/.test(email.value) === false){
+          alert('Please enter a valid email');
+          return ;
+        }
+
+        let request = new Request(`${host}/contacts`,{
+          method:'POST',
+          headers:{
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify({name:name.value,phone:phone.value,email:email.value,message:message.value})
+        });
+
+        fetch(request).then((resp)=>resp.json().then((res)=>{
+          console.log("fetch successful");
+          window.location.href = '/contact';
+        })).catch((err)=>{
+          window.location.href = '/404';
+        })
+      })
+    </script>
+</html>
