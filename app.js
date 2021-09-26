@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-// const morgan = require('morgan');
+const morgan = require('morgan');
 const hbs = require('hbs');
 const dotenv = require("dotenv").config();
 const mongoose = require('mongoose');
@@ -28,7 +28,7 @@ app.set("views", view_path);
 hbs.registerPartials(partials_path);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-// app.use(morgan('dev'));
+app.use(morgan('dev'));
 
 app.get("/", (req, res) => {
     res.render("login");

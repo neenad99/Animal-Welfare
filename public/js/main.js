@@ -1,3 +1,9 @@
+const payload = sessionStorage.getItem('payload');
+console.log(payload);
+if(payload === null){
+  window.location.href = '/';
+}
+
 (function($) {
 
 	'use strict';
