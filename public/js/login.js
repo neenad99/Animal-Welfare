@@ -45,7 +45,7 @@ function todoInitialize(){
    // can be one of 'email' or 'phone_number_sms'
    identifierType: "email",
    // Add the API key copied from 2nd step
-   apiKey: "", // add your sawo api key
+   apiKey: "634d1360-5a84-40a1-850c-663b73e3cfc9", // add your sawo api key
    // Add a callback here to handle the payload sent by sdk
    onSuccess: (payload) => {
      // Storing the payload in sessionStorage
