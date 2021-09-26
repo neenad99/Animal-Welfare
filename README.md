@@ -1,7 +1,7 @@
 # Animal Welfare
 App made to  solve the problem of finding and caring of abandoned or lost pets  by making the pet adoption process entirely automated and also it saves the time of user if he or she is looking for pet foundation or NGO.
 
-This repository contains code for Animal Welfare App m
+This repository contains code for Animal Welfare App 
 
 
 # Dependencies 
