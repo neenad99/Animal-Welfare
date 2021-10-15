@@ -30,5 +30,6 @@ morgan
 * Run by ``` npm start  ```
 
 # Demo
-This Project is hosted on HEROKU [VIEW DEMO](https://animal-welfare.herokuapp.com/)
+* This Project is hosted on HEROKU [VIEW DEMO](https://animal-welfare.herokuapp.com/)
+* If you have [coil](https://coil.com/) account or [coil](https://chrome.google.com/webstore/detail/coil/locbifcbeldmnphbgkdigjmkbfkhbnca?hl=en) browser extension then head over [here](https://animal-welfare.herokuapp.com/) to support my site
 
